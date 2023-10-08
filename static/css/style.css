@@ -1,0 +1,196 @@
+body {
+	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #121212;
+	color: #ffffff;
+}
+
+/* Global */
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+hr {
+	border: 1px solid #2D2D2D;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header {
+	background: #0A0A0A;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+}
+
+header a {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #branding{
+	float: left;
+}
+
+header #branding h1{
+	margin: 0;
+}
+
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header .highlight, header .current a{
+	color: #ffffff;
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #BEBEBE;
+}
+
+/* Showcase */
+
+#showcase{	
+	min-height: 400px;
+	background:url("../img/showcase.png") no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+}
+
+#boxes .box{
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+}
+
+#boxes .box img{
+	width:150px;
+	border-radius: 5px;
+}
+
+#boxes .box a{
+	display: block;
+    font-size: 20px;
+    margin-top: 8px;
+    font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#boxes .box a:hover{
+	text-decoration: none;
+	color: #BEBEBE;
+}
+
+/* Works */
+
+#works{
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+#works h1{
+	font-size: 30px;
+}
+
+#works ul {
+	list-style: none;
+	counter-reset: item;
+	text-indent: 16px;
+}
+
+#works li::before {
+	content: "• ";
+	counter-increment: item;
+	font-size: 16px;
+}
+
+#works .gamebox {
+	margin-top: 20px;
+	width: 500px;
+	height: 200px;
+	border: 5px solid #2D2D2D;
+	display: flex;
+	align-items: center;
+}
+
+.gamebox img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+}
+
+.gamebox-text {
+    text-align: center;
+}
+
+.gamebox-text a {
+    display: block;
+    font-size: 20px;
+    margin-top: 8px;
+    font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.gamebox a:hover{
+	text-decoration: none;
+	color: #BEBEBE;
+}
+
+footer{
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #0A0A0A;
+	text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 1080px){
+	header #branding,
+	header nav,
+	header nav li,
+	#boxes .box{
+		float: none;
+		text-align: center;
+		width: 100%
+	}
+	
+	header{
+		padding-bottom: 20px;
+	}
+	
+	#showcase h1{
+		margin-top: 40px;
+	}
+	
+	#boxes .box img{
+	width:300px;
+	border-radius: 10px;
+	}
+	
+	#works{
+	max-width: 100%;
+	margin: 0 auto;
+	}
+}
