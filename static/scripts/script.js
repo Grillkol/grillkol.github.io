@@ -10,7 +10,7 @@ const videoUrls = [
 ];
 
 function generateGallery() {
-    const container = document.querySelector('#boxes .container');
+    const galleryContainer = document.querySelector('#gallery .gallery-container');
 
     // Iterate over the video URLs and create a box for each
     videoUrls.forEach(url => {
