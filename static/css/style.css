@@ -101,6 +101,34 @@ header a:hover{
 	color: #BEBEBE;
 }
 
+/* haha */
+
+#boxesvideo .box{
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+}
+
+#boxesvideo .box img{
+	width:150px;
+	border-radius: 5px;
+}
+
+#boxesvideo .box a{
+	display: block;
+    font-size: 20px;
+    margin-top: 8px;
+    font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#boxesvideo .box a:hover{
+	text-decoration: none;
+	color: #BEBEBE;
+}
+
 /* Works */
 
 #works{
