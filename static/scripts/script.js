@@ -10,7 +10,7 @@ const videoUrls = [
 ];
 
 function generateGallery() {
-    const galleryContainer = document.querySelector('#gallery .gallery-container');
+    const galleryContainer = document.querySelector('#gallery .videos-container');
 
     // Iterate over the video URLs and create a box for each
     videoUrls.forEach(url => {
@@ -23,7 +23,7 @@ function generateGallery() {
         iframe.src = url;
 
         box.appendChild(iframe);
-        container.appendChild(box);
+        galleryContainer.appendChild(box);
     });
 }
 
